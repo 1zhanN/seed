@@ -1,0 +1,84 @@
+  <!-- 
+  Essential Scripts
+  =====================================-->
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <!-- Slick Slider -->
+  <script src="plugins/slick-carousel/slick/slick.min.js"></script>
+  <!-- Google Map -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU"></script>
+  <script src="plugins/google-map/gmap.js"></script>
+
+  <script src="js/script.js"></script>
+  <!-- <script src="https://www.gstatic.com/firebasejs/3.7.4/firebase.js"> -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
+
+  <script>
+    const firebaseConfig = {
+  apiKey: "AIzaSyDEsvEAGUe6FIENvim-zMW9FGI42oqKWwo",
+  authDomain: "seedinov-10c6d.firebaseapp.com",
+  databaseURL: "https://seedinov-10c6d-default-rtdb.firebaseio.com",
+  projectId: "seedinov-10c6d",
+  storageBucket: "seedinov-10c6d.appspot.com",
+  messagingSenderId: "236955398977",
+  appId: "1:236955398977:web:001f24ab3a8bc2bb06e7c0",
+  measurementId: "G-9XDGEX936G"
+};
+
+    // Initialize Firebase
+    const app = firebase.initializeApp(firebaseConfig);
+
+    var messagesRef = firebase.database().ref('/');
+
+    document.getElementById('contactForm')
+      .addEventListener('submit', submitForm);
+
+    function submitForm(e) {
+      console.log('submitForm')
+      e.preventDefault();
+
+      // // Get values
+      var name = getInputVal('name');
+      var phone = getInputVal('phone');
+      var email = getInputVal('email');
+      var message = getInputVal("message");
+      var subject = getInputVal("subject");
+
+      saveMessage(name, phone, email, subject, message);
+      
+      alert("Thank you for contacting us. We will get back to you shortly.");
+      document.getElementById('contactForm').reset();
+    }
+
+    // Function to get form values
+    function getInputVal(id) {
+      return document.getElementById(id).value;
+    }
+
+    // Save message to firebase
+    function saveMessage(name, phone, email, subject, message) {
+      var newMessageRef = messagesRef.push();
+      try {
+      newMessageRef.set({
+        name: name,
+        phone: phone,
+        email: email,
+        subject: subject,
+        message: message,
+      }, function(error) {
+    if (error) {
+      console.error("Data could not be saved.", error);
+    } else {
+      console.log("Data saved successfully.");
+    }})
+  } catch(err) {
+    console.log("err",err)
+  }
+    }
+
+</script>
+</body>
+</html>

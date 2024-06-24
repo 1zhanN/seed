@@ -1,0 +1,58 @@
+.map {
+  background: #101010;
+}
+.map .earn-trust {
+  margin-bottom: 40px !important;
+}
+.map .map-wrapper {
+  position: relative;
+}
+.map .map-icons {
+  width: 6px;
+  height: 6px;
+  position: absolute;
+  background-color: #A4E7D4;
+  border-radius: 50%;
+  transform: translate(-55%, -55%);
+  animation: 1.4s ease-out -1.4s infinite alternate forwards map-glowing;
+}
+.map .map-icons.usa {
+  top: 45%;
+  left: 17.75%;
+}
+.map .map-icons.france {
+  top: 36%;
+  left: 48.65%;
+}
+.map .map-icons.columbia {
+  top: 34.9%;
+  left: 52.8%;
+}
+.map .map-icons.saudia {
+  top: 51.7%;
+  left: 58.6%;
+}
+.map .map-icons.pakistan {
+  top: 51.7%;
+  left: 68.2%;
+}
+.map .map-icons.sa {
+  top: 84.6%;
+  left: 52.8%;
+}
+.map .map-icons.aus {
+  top: 73.6%;
+  left: 88%;
+}
+.map .map-icons.japan {
+  top: 43.6%;
+  left: 88.4%;
+}
+@keyframes map-glowing {
+  0% {
+    box-shadow: 0px 0px 1px 0px #A4E7D488;
+  }
+  100% {
+    box-shadow: 0px 0px 1px 5px #A4E7D488;
+  }
+}

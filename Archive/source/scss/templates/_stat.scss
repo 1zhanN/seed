@@ -1,0 +1,32 @@
+.seed-stats {
+  background: url(../../images/stats/stats-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.default-section-heading {
+  color: $black-text;
+  font-size: 32px;
+  font-weight: 600;
+}
+.default-section-heading span {
+  color: $primary-colors;
+}
+.default-text-para {
+  color: $black-text;
+  font-style: normal;
+  line-height: normal;
+}
+.seed-stats .stats-count .count {
+  color: $black-text;
+  font-size: 44px;
+  font-weight: 800;
+  @media (max-width:767px) {
+    font-size: 32px;
+  }
+}
+.seed-stats .stats-count p {
+  color: $black-text;
+  font-size: 12px;
+  font-weight: 500;
+}

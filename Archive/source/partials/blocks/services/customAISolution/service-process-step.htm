@@ -1,0 +1,189 @@
+<script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+<section class="seed-section process-steps">
+  <div class="scroll-content">
+    <div class="container mb-5">
+      <div class="row">
+        <div class="col-12">
+          <p class="alumni-description text-center m-auto mx-100">
+            Our <span>Process</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="section--vertical desktop" id="second">
+      <div class="block-list" style="padding: 0 50px">
+        <div class="block-list__item">
+          <div class="block-list__item-inner">
+            <div class="card-content">
+              <img
+                src="../../images/services-page/ai-services/evaluation1.svg"
+                width="60px"
+                height="60px"
+                class="mb-3"
+              />
+              <h4 class="mb-2">Need Assessment</h4>
+              <p>
+                We kick off by understanding your unique business requirements
+                and goals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="block-list__item">
+          <div class="block-list__item-inner">
+            <div class="card-content">
+              <img
+                src="../../images/services-page/ai-services/web-development1.svg"
+                width="60px"
+                height="60px"
+                class="mb-3"
+              />
+              <h4 class="mb-2">Custom Application Development</h4>
+              <p>
+                We kick off by understanding your unique business requirements
+                and goals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="block-list__item">
+          <div class="block-list__item-inner">
+            <div class="card-content">
+              <img
+                src="../../images/services-page/ai-services/analysis1.svg"
+                width="60px"
+                height="60px"
+                class="mb-3"
+              />
+              <h4 class="mb-2">Data Analysis Mastery</h4>
+              <p>
+                We kick off by understanding your unique business requirements
+                and goals.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="block-list__item">
+          <div class="block-list__item-inner">
+            <div class="card-content">
+              <img
+                src="../../images/services-page/ai-services/gear1.svg"
+                width="60px"
+                height="60px"
+                class="mb-3"
+              />
+              <h4 class="mb-2">Need Assessment</h4>
+              <p>
+                We kick off by understanding your unique business requirements
+                and goals.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mobile">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 col-12">
+            <div class="block-list__item-inner">
+              <div class="card-content">
+                <img
+                  src="../../images/services-page/ai-services/evaluation1.svg"
+                  width="60px"
+                  height="60px"
+                  class="mb-3"
+                />
+                <h4 class="mb-2">Need Assessment</h4>
+                <p>
+                  We kick off by understanding your unique business requirements
+                  and goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12">
+            <div class="block-list__item-inner">
+              <div class="card-content">
+                <img
+                  src="../../images/services-page/ai-services/evaluation1.svg"
+                  width="60px"
+                  height="60px"
+                  class="mb-3"
+                />
+                <h4 class="mb-2">Need Assessment</h4>
+                <p>
+                  We kick off by understanding your unique business requirements
+                  and goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12">
+            <div class="block-list__item-inner">
+              <div class="card-content">
+                <img
+                  src="../../images/services-page/ai-services/evaluation1.svg"
+                  width="60px"
+                  height="60px"
+                  class="mb-3"
+                />
+                <h4 class="mb-2">Need Assessment</h4>
+                <p>
+                  We kick off by understanding your unique business requirements
+                  and goals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-12">
+            <div class="block-list__item-inner">
+              <div class="card-content">
+                <img
+                  src="../../images/services-page/ai-services/evaluation1.svg"
+                  width="60px"
+                  height="60px"
+                  class="mb-3"
+                />
+                <h4 class="mb-2">Need Assessment</h4>
+                <p>
+                  We kick off by understanding your unique business requirements
+                  and goals.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="https://unpkg.com/scrollmagic@2.0.7/scrollmagic/uncompressed/ScrollMagic.js"></script>
+<script src="https://unpkg.com/scrollmagic@2.0.7/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+<script src="https://unpkg.com/scrollmagic@2.0.7/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+<script src="https://unpkg.com/gsap@3.10.1/dist/gsap.js"></script>
+<script>
+  window.addEventListener("load", function () {
+    var blockList = document.querySelector(".block-list");
+    var blockItems = document.querySelectorAll(".block-list__item");
+    var blockItemWidth = blockItems[0].offsetWidth;
+    var totalWidth = blockItemWidth * blockItems.length;
+    var travelDistance = totalWidth - 200;
+
+    var controller = new ScrollMagic.Controller();
+
+    var horizontalScroll = gsap.to(blockList, {
+      x: -travelDistance,
+      ease: "none",
+    });
+
+    var scene = new ScrollMagic.Scene({
+      triggerElement: "#second",
+      duration: totalWidth, // Adjust duration based on your requirement
+      triggerHook: 0.3,
+    })
+      .setPin(".block-list")
+      .setTween(horizontalScroll)
+      .addTo(controller);
+  });
+</script>

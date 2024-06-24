@@ -1,0 +1,128 @@
+/*----------------------
+ PROCESS
+-----------------------*/
+section#process {
+  background-image: url("../../images/bg/Logo seed.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  min-height: 574px;
+  // background-position: 84%;
+}
+#alumni-container {
+  img {
+    filter: none;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  p {
+    font-size: 18px;
+    margin: auto;
+    font-family: "Plus Jakarta Sans", sans-serif !important;
+  }
+  @media screen and (max-width: 991px) {
+    p {
+      font-size: 24px !important;
+    }
+  }
+  @media screen and (max-width: 767px) {
+    p {
+      font-size: 18px !important;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    p {
+      font-size: 16px !important;
+    }
+  }
+}
+#bytecorpimg {
+  width: 45px;
+}
+#Foliologo {
+  width: 150px;
+}
+#nustlogo {
+  width: 170px;
+}
+#JafferLogo {
+  width: 120px;
+}
+
+.process-block {
+  margin: auto;
+  text-align: center;
+  img {
+    border-radius: 5px;
+    margin-bottom: 45px;
+    // filter: grayscale(100%);
+  }
+  h3 {
+    margin-bottom: 15px;
+  }
+}
+
+.bottom-bar {
+  margin-top: 40px;
+  max-width: 860px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  font-family: $secondary-font;
+
+  h2 {
+    text-align: center;
+    color: var(--heading-color, #202020);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+
+  p {
+    color: var(--text-color, #2c2c2c);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  div {
+    margin-top: 24px;
+  }
+}
+#section-para {
+  font-size: 24px;
+  font-weight: 400;
+  span {
+    color: $span-background;
+    font-weight: 700;
+  }
+}
+
+.earn-trust {
+  max-width: 479px;
+  color: var(--text-color, #2c2c2c);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.earn-trust span {
+  color: var(--main-color-1, #30ab89);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,57 @@
+.what-we-offer .accordion-btn {
+  width: 100%;
+  text-align: left;
+  padding-left: 0px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  font-size: 18px;
+  color: var(--text-color, #2c2c2c);
+  font-weight: 500;
+  text-transform: capitalize;
+  position: relative;
+}
+.what-we-offer #service-heading {
+    @media (max-width: 991px) {
+        text-align: center;
+    }
+}
+.what-we-offer .accordion-btn::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 28px;
+  width: 20px;
+  height: 20px;
+  background: url(/images/services-page/ph_plus-light.svg);
+  opacity: 0;
+  animation: 1s customAccordionAnimation ease-in-out forwards;
+}
+
+.accordion-btn:not(.collapsed)::after {
+  background: url(/images/services-page/ph_minus.svg);
+  animation: 1s customAccordionAnimation ease-in-out forwards;
+}
+@keyframes customAccordionAnimation {
+    0% {
+        opacity: .5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.what-we-offer .accordion-btn:hover {
+  text-decoration: none;
+}
+.what-we-offer .card-header {
+  padding: 0;
+  border: 0px;
+  background: transparent;
+}
+.what-we-offer .card {
+  border: 0;
+  border-bottom: 1px solid #c8c8c8 !important;
+  border-radius: 0px !important;
+}
+.what-we-offer .card .card-body {
+  padding: 0px 0px 24px;
+}

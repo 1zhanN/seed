@@ -1,0 +1,257 @@
+.workflow {
+  background-image: url(../../images/process/process-bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 75%;
+  overflow: hidden;
+  min-height: 1118.5px;
+}
+.workflow-header {
+  padding: 1rem 1rem;
+  position: relative;
+}
+.workflow-header h6 {
+color: var(--text-color, #2C2C2C);
+text-align: center;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+text-align: center;
+margin: 0 auto
+}
+
+.workflow-header h6 span {
+  color: $darkGreenSpan;
+  font-weight: 700;
+}
+@media screen and (max-width: 991px) {
+  .workflow-header {
+    padding: 1rem 0.8rem;
+  }
+  .workflow-header h6 {
+    font-size: 24px;
+    color: #343a40;
+  }
+}
+@media screen and (max-width: 767px) {
+  .workflow-header h6 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .workflow-header h6 {
+  color: var(--text-color, #2C2C2C);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  }
+}
+.greenHorizontalLine {
+  width: 100%;
+}
+.workFlow-heading {
+  margin: 4rem auto;
+}
+.workFlow-heading h3 {
+  text-align: center;
+  font-size: 32px;
+  line-height: 40.22px;
+  @media (max-width: 1154px) {
+    font-size: 25px;
+  }
+  font-style: normal;
+  font-weight: 700;
+}
+.workFlow-heading h3 span {
+  color: #187f5f;
+  font-weight: 700;
+}
+@media screen and (max-width: 1108px) {
+  .workFlow-heading h3 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 1102px) {
+  .workFlow-heading h3 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 1102px) {
+  .workFlow-heading h3 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 804px) {
+  .greenHorizontalLine {
+    display: none;
+  }
+}
+.workFlow-body {
+  // background: rgba(255, 255, 255, 0.5) url(../../images/workFlow/Bg\ logo.png)
+  //   no-repeat;
+  background-position: center;
+  position: relative;
+}
+.workFlow-body .workflowContainer {
+  //   background: $green-border;
+  border-radius: 10px;
+  padding-top: 6px;
+  //   padding: 6px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  //   padding: 10px;
+  font-size: 19px;
+  box-sizing: border-box;
+  //   margin-top: 1rem;
+  color: black;
+  font-weight: 400px;
+
+  max-width: 405px;
+}
+.workFlow-body h3 {
+  color: var(--heading-color, #202020);
+text-align: center;
+font-family: Plus Jakarta Sans;
+font-size: 24px;
+font-style: normal;
+font-weight: 600;
+line-height: 35px; /* 145.833% */
+margin: 0;
+text-align: end;
+max-width: 405px;
+
+}
+.completeCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 4rem;
+}
+.allCards {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  transform: translate(-72%, 0);
+  height: 100%;
+  min-height: 1501px;
+  // width: 100%;
+  // height: 1501px;
+}
+.imageContainer {
+  transform: translateY(-15px);
+  width: 143px;
+  height: 83px;
+}
+.evencompleteCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  transform: translateX(45%);
+}
+.evencompleteCard h3,
+.evencompleteCard div {
+  text-align: left;
+}
+@media screen and (max-width: 1300px) {
+  .workFlow-body .workflowContainer {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .workFlow-body .workflowContainer {
+    width: 500px;
+  }
+  .workFlow-body h3 {
+    font-size: 25px;
+  }
+  .allCards {
+    transform: translate(-70%, 0);
+  }
+  .evencompleteCard {
+    transform: translateX(40%);
+  }
+}
+@media screen and (max-width: 1070px) {
+  .workFlow-body h3 {
+    font-size: 19px;
+  }
+  .workFlow-body .workflowContainer {
+    font-size: 16px;
+  }
+  .workFlow-body .workflowContainer {
+    width: 400px;
+  }
+  .allCards {
+    transform: translate(-78%, 0);
+  }
+  .evencompleteCard {
+    transform: translateX(55%);
+  }
+  .imageContainer {
+    width: 110px;
+  }
+}
+@media screen and (max-width: 850px) {
+  .workflowCenterStick {
+    width: 18px;
+  }
+  .workFlow-body h3 {
+    font-size: 16px;
+  }
+  .workFlow-body .workflowContainer {
+    width: 250px;
+    font-size: 12px;
+    margin-top: 0.5rem;
+  }
+  .imageContainer {
+    width: auto;
+    height: auto;
+    transform: translateY(0);
+  }
+  .imageContainer > img {
+    width: 90px;
+  }
+  .completeCard {
+    justify-content: center;
+    gap: 2rem;
+  }
+  .allCards {
+    transform: translate(-70%, 0);
+    min-height: 900px;
+  }
+  .evencompleteCard {
+    transform: translateX(40%);
+    justify-content: center;
+    // gap: .5rem;
+  }
+  .evencompleteCard > .imageContainer > img {
+    text-align: right;
+  }
+}
+@media screen and (max-width: 560px) {
+  .workFlow-body .workflowContainer {
+    width: 150px;
+    font-size: 9px;
+  }
+  .allCards {
+    transform: translate(-65%, 0);
+  }
+  .imageContainer > img {
+    width: 70px;
+  }
+  .workFlow-body h3 {
+    width: 150px;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .evencompleteCard {
+    transform: translateX(34%);
+  }
+}

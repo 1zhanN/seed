@@ -1,0 +1,163 @@
+/*----------------------
+ SERVICE
+-----------------------*/
+
+.service-container {
+  margin: auto;
+  max-width: 1540px;
+  
+  margin: 80px auto;
+
+  @media (max-width: 1154px) {
+    margin: 50px auto;
+  }
+}
+
+h5.subtitle {
+  color: $primary-color;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+
+#service-subheading {
+  color: $black-text;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5;
+
+  @media (max-width: 1154px) {
+    font-size: 14px;
+  }
+}
+
+#service-heading {
+  margin-bottom: 14px !important;
+  font-size: 32px;
+  line-height: 1.25;
+  @media (max-width: 1154px) {
+    font-size: 25px;
+  }
+  span {
+    color: #30AB89;
+  }
+}
+
+.service-heading {
+  margin-bottom: 50px !important;
+}
+
+.service-images {
+  margin-bottom: -200px;
+  border: 10px solid $light;
+}
+
+.service-content {
+  padding-top: 60px;
+  padding-left: 15px;
+
+  h1 {
+    margin-bottom: 20px;
+    margin-top: 15px;
+  }
+}
+
+.service-icon {
+  margin-right: 20px;
+  color: $light;
+  font-size: 25px;
+  width: 50px;
+  height: 50px;
+  background: #A5EBD7;
+  text-align: center;
+  border-radius: 50%;
+  padding-top: 5px;
+}
+
+.service-block {
+  margin-bottom: 50px;
+}
+
+.service-inner-content h4 {
+  // text-transform: uppercase;
+}
+
+/*----------------------
+ WEB SERVICES
+-----------------------*/
+#services-2{
+  position: relative;
+  padding: 20px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-color: #FAFAFA;
+  color: $black-text;
+}
+
+.service-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+
+  @media (max-width: 1154px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (max-width: 800px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// .web-service-block:hover {
+//   border: 1px solid #2b9778;
+// }
+.web-service-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  transition: 0.3s;
+  border-radius: 5px;
+  // border: 1px solid #fff;
+  cursor: pointer;
+
+  .image-container {
+    height: 4rem;
+  }
+  .image-container img {
+    height: 100%;
+  filter: brightness(1) invert(1);
+  }
+
+  h3 {
+    font-size: 25px;
+    margin: 0;
+    transition: 0.3s;
+    color: $black-text;
+  }
+
+
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s;
+    color: $black-text;
+    line-height: 1.5;
+    
+  }
+
+  a {
+    color: #30AB89 !important;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: auto;
+  }
+}
+
+.service-img {
+  margin-bottom: -200px !important;
+  border: 10px solid $light;
+  margin: auto;
+}

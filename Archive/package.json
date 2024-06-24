@@ -1,0 +1,28 @@
+{
+  "name": "rappo",
+  "version": "1.0.0",
+  "description": "rappo free corporate website template",
+  "author": "Themefisher",
+  "license": "MIT",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d docs",
+    "dev": "gulp",
+    "build": "gulp build"
+  },
+  "dependencies": {
+    "browser-sync": "^2.27.10",
+    "firebase": "^10.6.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-file-include": "^2.3.0",
+    "gulp-header-comment": "^0.10.0",
+    "gulp-rimraf": "^1.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.52.3"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.1.0",
+    "gulp": "^5.0.0"
+  }
+}
